@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #82AAE3;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#body {
+    background-color: #BFEAF5;
+    font-family: 'Noto Sans', sans-serif;
+    color: #2463bb;
+    margin-top: 10vh;
+    padding: 1rem 3rem;
+    border: 2px solid #91D8E4;
+    border-radius: 3px;
+    width: 80vw;
+}
+
+#below-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+section {
+    width: 50%;
+}
+
+.imc {
+    text-align: left;
+}
+
+.class {
+    text-align: center;
+}
+
+.obesity-level {
+    text-align: right;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8rem;
+    border-bottom: 1px solid gray;
+}
+
+#header, #subheader {
+    font-family: 'Ubuntu';
+}
+
+#header {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#subheader {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#sub-and-res {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+#sub-and-res > * {
+    width: 40%;
+    margin: 0 1rem;
+    background-color: white;
+    font-size: 0.8rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+#sub-and-res > *:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+#sub-and-res > *:active {
+    background-color: gray;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #6998da;
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu';
+}
+
+#footer-info {
+    font-size: 1rem;
+}
+
+#contacting-icons {
+    display: flex;
+}
+
+.contacting-div {
+    
+    margin: 0 1rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #2463bb;
+}
+
+#imcText1, #imcText2 {
+    height: 2rem;
+    color: black;
+    text-align: center;
+}
+
+#imcText2 {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    #below-header {
+        flex-direction: column;
+    }
+
+    #body {
+        margin-bottom: 20vh;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    #footer {
+        font-size: 0.8rem;
+    }
+
+    #contacting-icons {
+        flex-direction: column;
+    }
+
+}

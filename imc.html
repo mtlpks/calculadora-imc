@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4222a0128d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Calculo de IMC</title>
+  </head>
+  <body>
+    <div id="body">
+      <h1 id="header">Calculadora de IMC</h1>
+      <h2 id="subheader">Índice de Massa Corporal</h2>
+      <div id="below-header">
+        <section id="calc">
+          <form>
+            <label for="altura">
+              Altura:
+              <input
+                type="number"
+                id="altura"
+                step="0.01"
+                placeholder="Digite sua altura"
+                min="0"
+                required
+              />
+            </label>
+            <label for="peso" id="pesoLabel">
+              Peso:
+              <input
+                type="number"
+                id="peso"
+                step="0.01"
+                placeholder="Digite seu peso"
+                min="0"
+                required
+              />
+            </label>
+            <div id="sub-and-res">
+              <input id="submit" type="submit" value="Calcular" />
+              <input type="reset" value="Resetar" />
+            </div>
+          </form>
+          <h3 id="imcText1"></h3>
+          <h3 id="imcText2"></h3>
+          <script src="imc.js"></script>
+        </section>
+        <section id="info">
+          <article class="table top">
+            <p class="imc">IMC</p>
+            <p class="class">Classificação</p>
+            <p class="obesity-level">Grau de Obesidade</p>
+          </article>
+          <article class="table">
+            <p class="imc">Menor que 18,5</p>
+            <p class="class">Magreza</p>
+            <p class="obesity-level">0</p>
+          </article>
+          <article class="table">
+            <p class="imc">Entre 18,5 e 24,9</p>
+            <p class="class">Normal</p>
+            <p class="obesity-level">0</p>
+          </article>
+          <article class="table">
+            <p class="imc">Entre 25,0 e 29,9</p>
+            <p class="class">Sobrepeso</p>
+            <p class="obesity-level">I</p>
+          </article>
+          <article class="table">
+            <p class="imc">Entre 30,0 e 39,9</p>
+            <p class="class">Obesidade</p>
+            <p class="obesity-level">II</p>
+          </article>
+          <article class="table">
+            <p class="imc">Maior que 40,0</p>
+            <p class="class">Obesidade Grave</p>
+            <p class="obesity-level">III</p>
+          </article>
+        </section>
+      </div>
+    </div>
+    <div id="footer">
+      <h3 id="footer-info">Projeto desenvolvido por Matheus Leopoldo</h3>
+      <div id="contacting-icons">
+        <div class="contacting-div">
+          <a class="icon-link" href="https://github.com/mtlpks"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          >
+        </div>
+        <div class="contacting-div">
+          <a class="icon-link" href="mailto:mtlpks@outlook.com"
+            ><i class="fa-solid fa-envelope"></i> Email</a
+          >
+        </div>
+        <div class="contacting-div">
+          <a
+            class="icon-link"
+            id="profile-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/matheus-leopoldo-214104211/"
+            ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
