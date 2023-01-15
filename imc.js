@@ -11,7 +11,7 @@ frm.addEventListener("submit", (e) => {
     }
     const imc = pesoUsuario / Math.pow(alturaUsuario, 2)
     resp1.innerText = `Seu IMC é de ${imc.toFixed(1)}.`
-    if (imc < 18,5) {
+    if (imc < 18.5) {
         resp2.innerText = "Seu grau de obesidade é 0, seu IMC está classificado como magreza."
     } else if (imc < 25) {
         resp2.innerText = "Seu grau de obesidade é 0, seu IMC está classificado como normal."
